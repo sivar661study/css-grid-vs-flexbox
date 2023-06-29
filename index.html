@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid vs Flexbox</title>
+        <style>
+         body{
+            background-color: black;
+         }
+
+         h1{
+            color: whitesmoke;
+         }
+
+         h3{
+            color: whitesmoke;
+         }
+         
+         .flexbox-container > p {
+               color: white;
+               padding: 40px;
+               background-color: purple;
+               font-size: 20px;
+               border: 1px solid whitesmoke;
+              
+               
+         }
+
+         .flexbox-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            
+         }
+
+         .grid-text{
+            color: white;
+               padding: 40px;
+               background-color: violet;
+               font-size: 20px;
+               border: 1px solid whitesmoke;
+
+
+         }
+         
+         .grid-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-gap: 10px;
+            
+         }
+
+         
+   
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>CSS Grid vs Flexbox</h1>
+            <div class="css-grid">
+                <h3>CSS Grid</h3>
+                <div class="grid-container">
+                    <div class="grid-text">We've</div>
+                    <div class="grid-text">Known</div>
+                    <div class="grid-text">Each</div>
+                    <div class="grid-text">Other</div>
+                    <div class="grid-text">For</div>
+                    <div class="grid-text">So</div>
+                    <div class="grid-text">Long</div>
+
+                </div>
+
+            </div>
+            <div class="css-flexbox"> <h3>Flebox</h3>
+                <div class="flexbox-container">
+                    <p>WE</p>
+                    <p>Both</p>
+                    <p>Know</p>
+                    <p>What's</p>
+                    <p>Been</p>
+                    <p>Going</p>
+                    <p>On</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
